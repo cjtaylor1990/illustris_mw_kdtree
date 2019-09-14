@@ -2,6 +2,12 @@ The following is my original README that I wrote for these scripts in 2015. The 
 
 I will not be hosting the data necessary to run these scripts, nor the Illustris team's scripts, but these can be accessed via http://www.illustris-project.org/data/
 
+In this project, I used both the particle data and the FOF halo data from the Illustris and Illustris-Dark simulations to estimate the mass of the Milky Way (~1x10^12 solar masses) using measured properties (e.g. stellar mass, mass within 50 kpc, etc) and creating a statistical weighting scheme based on these.
+
+The biggest advance was done in the kdTree codes (kdTree_10-300kpc.py, kdTree_10-300kpc.py), where I am directly calculating the the mass distribution of every FOF halo in the Illustris catalogue using a k-D Tree search algorithm from SciPy. Individuals before myself used a naive search across massive, unordered arrays that proved to be incredibly inefficient. By using the k-D Tree search algorithm and only loading subsets of particles at a time, I greatly decreased runtime and memory usage by a factor of 100-1000, decreasing the run time from weeks to days.
+
+Finally, as this is a historical record, I am not going to update the coding style. My coding style has changed since I wrote this and I've largely transitioned to Python 3, but I want this to be an indicator or where I was in 2015.
+
 ------------
 
 This is a how-to document on reproducing the plots and table values from Taylor et al. 2016.  If you have any questions or concerns, feel free to email me at cjtaylor@astro.umd.edu. 
