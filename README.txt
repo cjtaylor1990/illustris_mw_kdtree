@@ -1,4 +1,6 @@
-The following is my original README that I wrote for these scripts in 2015. The codes were all written in Python 2.7 and do reference readsnapHDF5.py and readsubfHDF5.py which were codes produced by the Illustris team independently of myself (accessed in 2015). The results of this work were presented in Taylor et al. (2016), MNRAS 461, 3483. (arXiv link: https://arxiv.org/abs/1510.06409).
+The following is my original README that I wrote for these scripts in 2015. The codes were all written in Python 2.7 and do reference readsnapHDF5.py and readsubfHDF5.py which were codes produced by the Illustris team independently of myself (accessed in 2015). This also requires the use of MPFIT, a script that can be found here (https://code.google.com/archive/p/astrolibpy/downloads).
+
+The results of this work were presented in Taylor et al. (2016), MNRAS 461, 3483. (arXiv link: https://arxiv.org/abs/1510.06409).
 
 I will not be hosting the data necessary to run these scripts, nor the Illustris team's scripts, but these can be accessed via http://www.illustris-project.org/data/
 

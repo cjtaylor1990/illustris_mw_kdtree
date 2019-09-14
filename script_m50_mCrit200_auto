@@ -1,0 +1,7 @@
+#!/bin/bash
+echo START!
+for m in 0 1 2 3 4 5 6 7 8
+do
+	python halo_weighing_m50_auto.py $m 0.1
+	python cumdist_mass_auto.py mcrit200 halo_weighing_mInside.npy $m >> script_m50_mCrit200.txt
+done
